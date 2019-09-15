@@ -1,0 +1,24 @@
+{
+  "name": "Dadux",
+  "version": "1.0.0",
+  "description": "demo for general redux",
+  "main": "index.js",
+  "scripts": {
+    "uy": "babel src -d build --copy-files",
+    "build": "webpack --mode=development",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.9.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.8"
+  }
+}
