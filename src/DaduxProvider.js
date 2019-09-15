@@ -14,6 +14,7 @@ class DaduxProvider extends Component {
   }
 
   render() {
+    const { children } = this.props;
     const { contextValue } = this.state;
 
     return (

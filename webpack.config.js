@@ -1,24 +1,26 @@
-const path = require('path')
+const path = require('path');
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const htmlWebpackPlugin = new HtmlWebpackPlugin({
+    template: path.join(__dirname, "examples/index.html"),
+    filename: "./index.html"
+});
 
 module.exports = {
-  entry : './src/index.js',
-  output : {
-      path : path.resolve(__dirname, 'build'),
-      filename : 'index.js',
-      library : 'Dadux'
-  },
+  entry: path.join(__dirname, "examples/src/index.js"),
   module: {
     rules: [
       {
-        test: /\.js$/,
-        exclude: /(node_modules)/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env']
-          }
-        }
+        test: /\.(js|jsx)$/,
+        use: "babel-loader",
+        exclude: /node_modules/
       }
     ]
+  },
+  plugins: [htmlWebpackPlugin],
+  resolve: {
+    extensions: [".js", ".jsx"]
+  },
+  devServer: {
+    port: 3000
   }
-}
+};
