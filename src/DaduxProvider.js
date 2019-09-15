@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-import ReduxContext from './ReduxContext';
+import DaduxContext from './DaduxContext';
 
-class ReduxProvider extends Component {
+class DaduxProvider extends Component {
   constructor(props) {
     super(props);
 
@@ -17,11 +17,11 @@ class ReduxProvider extends Component {
     const { contextValue } = this.state;
 
     return (
-      <ReduxContext.Provider value={contextValue}>
+      <DaduxContext.Provider value={contextValue}>
         {children}
-      </ReduxContext.Provider>
+      </DaduxContext.Provider>
     )
   }
 }
 
-export default ReduxProvider;
+export default DaduxProvider;

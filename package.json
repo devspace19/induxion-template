@@ -1,17 +1,17 @@
 {
-  "name": "Dadux",
-  "version": "1.0.0",
+  "name": "dadux",
+  "version": "1.0.3",
   "description": "demo for general redux",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
-    "uy": "babel src -d build --copy-files",
     "build": "webpack --mode=development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "react": "^16.9.0"
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
   },
   "devDependencies": {
     "@babel/core": "^7.6.0",
