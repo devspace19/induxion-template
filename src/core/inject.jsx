@@ -15,9 +15,7 @@ const HOCComponent = (Component) => {
       const props = {};
 
       Object.keys(states).map(state => {
-        const resultState = get(mapState, `${states[state]}`);
-
-        props[state] = resultState;
+        props[state] = get(mapState, `${states[state]}`);
       });
 
       return props;
