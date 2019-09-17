@@ -1,5 +1,5 @@
 # Induxion Development
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 
 > A Redux State Management for Central Distributed System
 
@@ -56,6 +56,7 @@ To Be Added.
 <table>
   <tr>
     <td align="center"><a href="https://github.com/alziqziq"><img src="https://avatars1.githubusercontent.com/u/29282122?v=4" width="100px;" alt="..."/><br /><sub><b>...</b></sub></a><br /><a href="#ideas-alziqziq" title="Ideas, Planning, & Feedback">🤔</a></td>
+    <td align="center"><a href="http://nurimansyahrifwan.com"><img src="https://avatars2.githubusercontent.com/u/2128638?v=4" width="100px;" alt="Nurimansyah Rifwan"/><br /><sub><b>Nurimansyah Rifwan</b></sub></a><br /><a href="https://github.com/devspace19/induxion/commits?author=nurimansyah89" title="Code">💻</a></td>
   </tr>
 </table>
 
