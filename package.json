@@ -4,7 +4,8 @@
   "description": "A Redux State Management for Central Distributed System",
   "main": "build/index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development",
+    "link": "npm link && npm link @devspace/induxion",
+    "start": "npm run link && webpack-dev-server --mode development",
     "watch": "babel src -d build --copy-files --watch",
     "transpile": "babel src -d build --copy-files",
     "prepublishOnly": "npm run transpile",
@@ -25,6 +26,7 @@
   "author": "devspace",
   "license": "ISC",
   "dependencies": {
+    "lodash": "^4.17.15",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-redux": "^7.1.1",

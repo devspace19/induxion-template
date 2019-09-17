@@ -2,7 +2,10 @@ import React from 'react';
 import { inject } from '@devspace/induxion';
 
 class Landing extends React.Component {
-  static getStates = ['example'];
+  static getStates = {
+    title: 'example.title',
+    animals: 'example.animals.data'
+  };
   static getActions = ['actionChangeExample', 'actionFetchExample'];
 
   componentDidMount = () => {
@@ -10,13 +13,12 @@ class Landing extends React.Component {
   }
 
   render = () => {
-    const { example, actionChangeExample, actionFetchExample } = this.props;
-    const animals = example.animals.data || [];
+    const { title, animals = [], actionChangeExample, actionFetchExample } = this.props;
 
     return (
       <div>
         <h1>Hello world from induxion!</h1>
-        <h2>The title are: { example.title }</h2>
+        <h2>The title are: { title }</h2>
 
         <button type="button" onClick={() => actionChangeExample('New title from Induxion')}>Change Example</button>
         <button onClick={actionFetchExample}>
