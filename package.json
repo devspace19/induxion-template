@@ -4,11 +4,14 @@
   "description": "A Redux State Management for Central Distributed System",
   "main": "build/index.js",
   "scripts": {
-    "link": "npm link && npm link @devspace/induxion",
-    "start": "npm run link && webpack-dev-server --mode development",
+    "links": "npm link && npm link @devspace/induxion",
+    "links:yarn": "yarn link && yarn link @devspace/induxion",
+    "start": "npm run links && webpack-dev-server --mode development",
+    "start:yarn": "yarn links:yarn && webpack-dev-server --mode development",
     "watch": "babel src -d build --copy-files --watch",
     "transpile": "babel src -d build --copy-files",
     "prepublishOnly": "npm run transpile",
+    "prepublishOnly:yarn": "yarn transpile",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
