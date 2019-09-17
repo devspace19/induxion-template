@@ -1,2 +1,2 @@
-export { default as DaduxProvider } from './DaduxProvider';
-export { default as withDadux } from './withDadux';
+export { default as inject } from './core/inject';
+export { default as Wrapper } from './core/wrapper';
