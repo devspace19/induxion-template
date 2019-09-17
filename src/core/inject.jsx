@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import * as Action from '../redux/actions';
 
 const HOCComponent = (Component) => {
-
     // Map state to props
     let mapStateToProps = state => state;
     if (Component.getStates) {

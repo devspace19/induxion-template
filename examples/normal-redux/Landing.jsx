@@ -2,7 +2,6 @@ import React from 'react';
 import { inject } from '@devspace/induxion';
 
 class Landing extends React.Component {
-
     static getStates = ['example'];
     static getActions = ['actionChangeExample'];
 
