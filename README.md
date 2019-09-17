@@ -1,4 +1,5 @@
 # Induxion Development
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 
 > A Redux State Management for Central Distributed System
 
@@ -49,7 +50,18 @@ To Be Added.
 
 ## Contributors
 
-To be added
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/alziqziq"><img src="https://avatars1.githubusercontent.com/u/29282122?v=4" width="100px;" alt="..."/><br /><sub><b>...</b></sub></a><br /><a href="#ideas-alziqziq" title="Ideas, Planning, & Feedback">🤔</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 
 ## License
 
