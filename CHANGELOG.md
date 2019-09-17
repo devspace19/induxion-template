@@ -4,6 +4,7 @@
 ### 18 September 2019
 
 - [x] Create an `async` action handlers
+- [x] getStates using a object
 
 ### 17 September 2019
 
