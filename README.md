@@ -64,6 +64,8 @@ To Be Added.
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
+> To add some contributors, just run `./node_modules/.bin/all-contributors add [GITHUB_USERNAME] [TYPE]`, where the type can be one of [this](https://allcontributors.org/docs/en/emoji-key).
+
 ## License
 
 See the [LICENSE](LICENSE.md) for more informations.
