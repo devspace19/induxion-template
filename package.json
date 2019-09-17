@@ -4,7 +4,8 @@
   "description": "A Redux State Management for Central Distributed System",
   "main": "build/index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development",
+    "link": "npm link && npm link @devspace/induxion",
+    "start": "npm run link && webpack-dev-server --mode development",
     "watch": "babel src -d build --copy-files --watch",
     "transpile": "babel src -d build --copy-files",
     "prepublishOnly": "npm run transpile",
@@ -22,13 +23,15 @@
     "distributed",
     "cli"
   ],
-  "author": "Muhammad Al Ziqri",
+  "author": "devspace",
   "license": "ISC",
   "dependencies": {
+    "lodash": "^4.17.15",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-redux": "^7.1.1",
-    "redux": "^4.0.4"
+    "redux": "^4.0.4",
+    "redux-thunk": "^2.3.0"
   },
   "peerDependencies": {
     "react": "^16.9.0",
@@ -41,6 +44,7 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
     "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "html-webpack-plugin": "^3.2.0",

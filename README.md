@@ -59,7 +59,7 @@ See the [LICENSE](LICENSE.md) for more informations.
 
 Again, this project is still in __ALPHA__ development, so don't hesitate to ask us for contributing to this project. Feel free to drop us a message to:
 
-- Muhammad Al Ziqri
+- alziqziq@gmail.com
 - nurimansyah.rifwan@gmail.com
 
 - - -

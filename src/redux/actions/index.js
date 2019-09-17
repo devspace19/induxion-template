@@ -1,1 +1,0 @@
-export { actionChangeExample } from './example';

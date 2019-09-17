@@ -1,6 +1,11 @@
 # CHANGELOG & TODO List
 
 ## Changelogs
+### 18 September 2019
+
+- [x] Create an `async` action handlers
+- [x] getStates using an object
+
 ### 17 September 2019
 
 - [x] Initial Commit
@@ -9,7 +14,6 @@
 
 ## Todos
 
-- [ ] Create an `async` action handlers
 - [ ] Create CLI for initial creation for `Induxion` projects
 - [ ] Create nice documentation. We propose using [Docusaurus](https://docusaurus.io/) for scalable and easy to maintain.
 - [ ] Create a cosmetics things for the development supports, such as testings, code linting, commit lint, etc.

@@ -2,27 +2,35 @@ import React from 'react';
 import { inject } from '@devspace/induxion';
 
 class Landing extends React.Component {
+  static getStates = {
+    title: 'example.title',
+    animals: 'example.animals.data'
+  };
+  static getActions = ['actionChangeExample', 'actionFetchExample'];
 
-    static getStates = ['example'];
-    static getActions = ['actionChangeExample'];
+  componentDidMount = () => {
+    console.log('==REDUX PROPS', this.props);
+  }
 
-    componentDidMount = () => {
-        console.log('==REDUX PROPS', this.props);
-    }
+  render = () => {
+    const { title, animals = [], actionChangeExample, actionFetchExample } = this.props;
 
-    render = () => {
+    return (
+      <div>
+        <h1>Hello world from induxion!</h1>
+        <h2>The title are: { title }</h2>
 
-        const { example, actionChangeExample } = this.props;
+        <button type="button" onClick={() => actionChangeExample('New title from Induxion')}>Change Example</button>
+        <button onClick={actionFetchExample}>
+          Get My Animals
+        </button>
 
-        return (
-            <div>
-                <h1>Hello world from induxion!</h1>
-                <h2>The title are: { example.title }</h2>
-
-                <button type="button" onClick={() => actionChangeExample('New title from Induxion')}>Change Example</button>
-            </div>
-        );
-    };
+        <ul>
+          {animals.map((list, key) => <li key={key}>{list}</li>)}
+        </ul>
+      </div>
+    );
+  };
 }
 
 export default inject(Landing);
