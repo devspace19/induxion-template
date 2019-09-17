@@ -22,7 +22,7 @@
     "distributed",
     "cli"
   ],
-  "author": "Dev Space",
+  "author": "devspace",
   "license": "ISC",
   "dependencies": {
     "react": "^16.9.0",
