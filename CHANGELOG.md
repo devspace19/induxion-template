@@ -1,16 +1,15 @@
 # CHANGELOG & TODO List
 
 ## Changelogs
+### 18 September 2019
+
+- [x] Create an `async` action handlers
+
 ### 17 September 2019
 
 - [x] Initial Commit
 - [x] Added core scripts for creating the `Wrapper` and `inject` features
 - [x] Added [@all-contributors bot](https://allcontributors.org)
-
-## Changelogs
-### 18 September 2019
-
-- [x] Create an `async` action handlers
 
 ## Todos
 
