@@ -1,5 +1,4 @@
 import React from 'react';
-import { inject } from '@devspace/induxion';
 
 class Landing extends React.Component {
   static getStates = {
@@ -33,4 +32,4 @@ class Landing extends React.Component {
   };
 }
 
-export default inject(Landing);
+export default Landing;
