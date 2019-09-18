@@ -1,12 +1,17 @@
 {
-  "name": "dadux",
+  "name": "@devspace/induxion",
   "version": "0.0.0",
-  "description": "A database redux for same react project",
+  "description": "A Redux State Management for Central Distributed System",
   "main": "build/index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development",
+    "links": "npm link && npm link @devspace/induxion",
+    "links:yarn": "yarn link && yarn link @devspace/induxion",
+    "start": "npm run links && webpack-dev-server --mode development",
+    "start:yarn": "yarn links:yarn && webpack-dev-server --mode development",
+    "watch": "babel src -d build --copy-files --watch",
     "transpile": "babel src -d build --copy-files",
     "prepublishOnly": "npm run transpile",
+    "prepublishOnly:yarn": "yarn transpile",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -14,24 +19,36 @@
     "url": "git@github.devspace.com:devspace19/dadux.git"
   },
   "keywords": [
-    "dadux",
     "redux",
-    "react"
+    "reactjs",
+    "redux-thunk",
+    "state-management",
+    "distributed",
+    "cli"
   ],
-  "author": "Muhammad Al Ziqri",
+  "author": "devspace",
   "license": "ISC",
   "dependencies": {
+    "lodash": "^4.17.15",
     "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react-dom": "^16.9.0",
+    "react-redux": "^7.1.1",
+    "redux": "^4.0.4",
+    "redux-thunk": "^2.3.0"
   },
   "peerDependencies": {
     "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react-dom": "^16.9.0",
+    "react-redux": "^7.1.1",
+    "redux": "^4.0.4"
   },
   "devDependencies": {
+    "all-contributors-cli": "^6.9.1",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "html-webpack-plugin": "^3.2.0",
