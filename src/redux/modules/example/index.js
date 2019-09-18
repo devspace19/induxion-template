@@ -13,7 +13,7 @@ const ACTION_HANDLERS = {
     return {
       ...state,
       title: action.payload
-    }
+    };
   },
 
   [types.LOAD_ANIMAL]: state => {
@@ -23,7 +23,7 @@ const ACTION_HANDLERS = {
         ...state.animals,
         isFetching: true
       }
-    }
+    };
   },
 
   [types.LOAD_ANIMAL_SUCCESS]: (state, action) => {
@@ -36,7 +36,7 @@ const ACTION_HANDLERS = {
         isFetching: false,
         data
       }
-    }
+    };
   },
 
   [types.LOAD_ANIMAL_FAIL]: state => {
@@ -46,7 +46,7 @@ const ACTION_HANDLERS = {
         ...state.animals,
         isFetching: false
       }
-    }
+    };
   }
 };
 
