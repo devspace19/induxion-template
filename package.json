@@ -43,6 +43,7 @@
     "redux": "^4.0.4"
   },
   "devDependencies": {
+    "all-contributors-cli": "^6.9.1",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
