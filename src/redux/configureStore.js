@@ -13,6 +13,7 @@ export default function configureStore(preloadedState = {}) {
   // TODO for suport ssr
   // if (process.env.BROWSER && DEV) {
   // }
+
   if (window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) {
     composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({
       actionCreators

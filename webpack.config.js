@@ -1,11 +1,14 @@
 const path = require('path');
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HWPPlugin = new HtmlWebpackPlugin({
-    template: path.join(__dirname, "examples/index.html"),
-    filename: "./index.html"
+  template: path.join(__dirname, 'examples/index.html'),
+  filename: './index.html'
 });
 
-let args = process.argv.find(arg => arg.search(/\"?--example=.+\"?/) > -1) || '--example=normal-redux';
+let args =
+  process.argv.find(arg => arg.search(/\?--example=.+\?/) > -1) ||
+  '--example=normal-redux';
+
 args = args.split('=');
 if (args.length < 1) {
   console.error('Please provide a target examples folder.');
@@ -19,14 +22,14 @@ module.exports = {
     rules: [
       {
         test: /\.(js|jsx)$/,
-        use: "babel-loader",
+        use: 'babel-loader',
         exclude: /node_modules/
       }
     ]
   },
   plugins: [HWPPlugin],
   resolve: {
-    extensions: [".js", ".jsx"]
+    extensions: ['.js', '.jsx']
   },
   devServer: {
     port: 3000

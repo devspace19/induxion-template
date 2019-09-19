@@ -12,6 +12,7 @@
     "transpile": "babel src -d build --copy-files",
     "prepublishOnly": "npm run transpile",
     "prepublishOnly:yarn": "yarn transpile",
+    "lint": "eslint --fix --format table --ext .js,.jsx ./",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,7 +27,7 @@
     "distributed",
     "cli"
   ],
-  "author": "devspace",
+  "author": "devspace19",
   "license": "ISC",
   "dependencies": {
     "lodash": "^4.17.15",
@@ -46,12 +47,18 @@
     "all-contributors-cli": "^6.9.1",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.3",
     "babel-loader": "^7.1.4",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "eslint": "^6.4.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.14.3",
     "html-webpack-plugin": "^3.2.0",
+    "husky": "^3.0.5",
+    "prettier": "1.18.2",
     "webpack": "^4.40.2",
     "webpack-cli": "^3.3.8",
     "webpack-dev-server": "^3.8.0"
