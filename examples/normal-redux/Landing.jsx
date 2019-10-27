@@ -16,8 +16,6 @@ class Landing extends React.Component {
     const {
       title,
       animals = [],
-      actionChangeExample,
-      actionFetchExample,
       actionChangeExampleAPPS,
       actionFetchExampleAPPS
     } = this.props;
