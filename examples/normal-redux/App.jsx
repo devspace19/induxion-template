@@ -1,14 +1,17 @@
 import React, { Fragment } from 'react';
+
+import { Provider } from '../../src/index';
 import Landing from './Landing';
-import { Wrapper } from '@devspace/induxion';
+import * as actions from './redux/actions';
+import * as reducers from './redux/reducers';
 
 class App extends React.Component {
   render = () => {
     return (
       <Fragment>
-        <Wrapper>
+        <Provider actions={actions} reducers={reducers}>
           <Landing />
-        </Wrapper>
+        </Provider>
       </Fragment>
     );
   };

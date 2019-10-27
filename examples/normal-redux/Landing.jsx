@@ -1,12 +1,12 @@
 import React from 'react';
-import { inject } from '@devspace/induxion';
+import { inject } from '../../src/index';
 
 class Landing extends React.Component {
   static getStates = {
-    title: 'example.title',
-    animals: 'example.animals.data'
+    title: 'exampleAPPS.title',
+    animals: 'exampleAPPS.animals.data'
   };
-  static getActions = ['actionChangeExample', 'actionFetchExample'];
+  static getActions = ['actionChangeExampleAPPS', 'actionFetchExampleAPPS'];
 
   componentDidMount = () => {
     console.log('==REDUX PROPS', this.props);
@@ -16,8 +16,8 @@ class Landing extends React.Component {
     const {
       title,
       animals = [],
-      actionChangeExample,
-      actionFetchExample
+      actionChangeExampleAPPS,
+      actionFetchExampleAPPS
     } = this.props;
 
     return (
@@ -27,11 +27,11 @@ class Landing extends React.Component {
 
         <button
           type="button"
-          onClick={() => actionChangeExample('New title from Induxion')}
+          onClick={() => actionChangeExampleAPPS('New title from Induxion')}
         >
           Change Example
         </button>
-        <button onClick={actionFetchExample}>Get My Animals</button>
+        <button onClick={actionFetchExampleAPPS}>Get My Animals</button>
 
         <ul>
           {animals.map((list, key) => (

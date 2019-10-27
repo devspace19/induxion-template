@@ -1,7 +1,1 @@
-import { combineReducers } from 'redux';
-
-import example from './modules/example';
-
-export default combineReducers({
-  example
-});
+export { default as example } from './modules/example';

@@ -4,10 +4,8 @@
   "description": "A Redux State Management for Central Distributed System",
   "main": "build/index.js",
   "scripts": {
-    "links": "npm link && npm link @devspace/induxion",
-    "links:yarn": "yarn link && yarn link @devspace/induxion",
-    "start": "npm run links && webpack-dev-server --mode development",
-    "start:yarn": "yarn links:yarn && webpack-dev-server --mode development",
+    "start": "webpack-dev-server --mode development",
+    "start:yarn": "webpack-dev-server --mode development",
     "watch": "babel src -d build --copy-files --watch",
     "transpile": "babel src -d build --copy-files",
     "prepublishOnly": "npm run transpile",
@@ -17,31 +15,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.devspace.com:devspace19/dadux.git"
+    "url": "git@github.devspace.com:devspace19/induxion-template.git"
   },
   "keywords": [
-    "redux",
     "reactjs",
-    "redux-thunk",
     "state-management",
-    "distributed",
-    "cli"
+    "distributed"
   ],
   "author": "devspace19",
   "license": "ISC",
   "dependencies": {
-    "lodash": "^4.17.15",
+    "induxion": "git+ssh://git@github.com/devspace19/induxion.git",
     "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "react-redux": "^7.1.1",
-    "redux": "^4.0.4",
-    "redux-thunk": "^2.3.0"
+    "react-dom": "^16.9.0"
   },
   "peerDependencies": {
     "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "react-redux": "^7.1.1",
-    "redux": "^4.0.4"
+    "react-dom": "^16.9.0"
   },
   "devDependencies": {
     "all-contributors-cli": "^6.9.1",
