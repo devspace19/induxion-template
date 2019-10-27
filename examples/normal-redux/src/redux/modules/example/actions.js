@@ -2,7 +2,7 @@ import * as types from './types';
 import { getAnimals } from '../../../models/example';
 
 export const actionChangeExampleAPPS = value => ({
-  type: types.EXAMPLE_CHANGE_TITLE,
+  type: types.EXAMPLE_CHANGE_TITLE_APPS,
   payload: value
 });
 
