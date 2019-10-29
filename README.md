@@ -24,7 +24,7 @@ Please read carefully for usage in development:
 - Our aim is to make this project as a distributed state management library for any applications you create.
 - Scripts to Run:
     - `npm run watch` or `yarn watch`: For watching any code changes on `src`.
-    - `npm run transpile` or `yarn transpile`: For final build to `build` directory.
+    - `npm run build` or `yarn build`: For final build to `build` directory.
     - `npm run prepublishOnly` or `yarn prepublishOnly`: To be added.
     - `npm test` or `yarn test`: For running testings.
     - `npm run start` or `yarn start`: For running example service.

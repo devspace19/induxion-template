@@ -1,5 +1,5 @@
 import React from 'react';
-import { inject } from '../../src/index';
+import { inject } from '../../../build/index';
 
 class Landing extends React.Component {
   static getStates = {

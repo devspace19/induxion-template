@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
+import { Provider } from '../../../build/index';
 
-import { Provider } from '../../src/index';
 import Landing from './Landing';
 import * as actions from './redux/actions';
 import * as reducers from './redux/reducers';
